@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forge Fit is your ultimate fitness destination, offering group programs like Bootcamp, CrossFit, Kickboxing, Yoga, Pilates, and Zumba. Join us to achieve all your fitness goals.">
+    <meta name="keywords" content="Forge Fit, fitness, gym, personal training, group classes, gym membership, fitness programs, health, exercise, workout, trainers">
+    <title>Forge Fit</title>
+    <link rel="icon" type="image/x-icon" href="./images/gym-logo.svg">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- header START -->
+  <header>
+    <nav class="mainNav d-none d-lg-block">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Our trainers</a></li>
+        <li>
+            <a href="#home">
+                <img
+                  src="./images/gym-logo-name.svg"
+                  alt="Forge Fit logo"
+                  loading="lazy"
+                  data-scroll-logo="./images/gym-logo.svg"
+                  data-default-logo="./images/gym-logo-name.svg"
+                  >
+            </a>
+        </li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="" class="mainBtn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobileNav d-lg-none">
+      <div class="mobileHeader">
+        <a href="#home">
+          <img
+            src="./images/gym-logo.svg"
+            alt="Forge Fit logo"
+            loading="lazy"
+            >
+        </a>
+        <div class="hamburgerMenu">
+          <i class="bi-list"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobileMenu">
+      <div class="mobileMenuHeader">
+        <a href="#">
+          <img
+            src="./images/gym-logo.svg"
+            alt="Forge Fit logo"
+            loading="lazy"
+            >
+        </a>
+        <div class="closeMenu">
+          <i class="bi bi-x-lg"></i>
+        </div>
+      </div>
+      <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Programs</a>
+        </li>
+        <li>
+          <a href="#">Our trainers</a>
+        </li>
+        <li>
+          <a href="#">Schedule</a>
+        </li>
+        <li>
+          <a href="#">Membership</a>
+        </li>
+        <li>
+          <a href="" class="mainBtn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+        </li>
+      </ul>
+
+      <div class="footerSocial">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://x.com/" target="_blank">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- header END -->
+
+  <!-- hero START -->
+  <div class="carouselWrap" id="home">
+    <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/hero1.jpg" class="d-block w-100" alt="Man and woman working out with ropes">
+          <div class="carousel-caption">
+            <h1>Your Fitness Journey Starts Here</h1>
+            <p>Transform your body, mind, and spirit with our fitness programs designed to help you reach your potential.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hero2.jpg" class="d-block w-100" alt="Man working out with ropes">
+          <div class="carousel-caption">
+              <h2>Personalized Training Program</h2>
+              <p>Get customized workouts tailored to your goals.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hero33.jpg" class="d-block w-100" alt="Man lifting weights">
+          <div class="carousel-caption">
+              <h2>State-of-the-Art Equipment</h2>
+              <p>Experience the latest in fitness technology.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hero4.jpg" class="d-block w-100" alt="Man and woman working out by pushing a block">
+          <div class="carousel-caption">
+              <h2>Join Our Community</h2>
+              <p>Be part of a supportive and motivating environment.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <!-- hero END -->
+
+  <!-- about us START -->
+  <section class="aboutUs" >
+    <div class="container">
+      <div class="aboutUsText text-center" data-aos="fade-up">
+        <h3>About Forge Fit</h3>
+        <p>Welcome to Forge Fit, where strength is not just built but forged. We believe that fitness is more than a routine—it’s a lifestyle. At Forge Fit, we are dedicated to helping you shape not only your body but also your mind and spirit, forging a path to a healthier, stronger you.</p>
+        <p>Founded on the principles of dedication, resilience, and community, Forge Fit offers a comprehensive approach to fitness that caters to all levels. Whether you’re just beginning your fitness journey or looking to take your training to the next level, our expert trainers and state-of-the-art facilities are here to guide and support you every step of the way.</p>
+      </div>
+    </div>
+  </section>
+  <!-- about us END -->
+
+  <!-- why us START -->
+  <section class="whyUs">
+    <div class="container" data-aos="fade-up">
+      <h3>Why Forge Fit</h3>
+      <p>Join a fitness community where your growth is our priority. With personalized programs, cutting-edge equipment, and a welcoming atmosphere, Forge Fit provides a path to help you unleash your potential.</p> 
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <img src="./images/why1.jpg" class="card-img-top" alt="Man lifting weights">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Personalized Training Programs</h5>
+              <p class="card-text">We understand that no two bodies are the same, which is why our trainers develop customized workout plans tailored to your unique goals and fitness level.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="mainBtn">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <img src="./images/why2.jpg" class="card-img-top" alt="Woman on exercise bike">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Cutting-Edge Equipment</h5>
+              <p class="card-text">Our gym is equipped with the latest fitness technology, ensuring you have everything you need to maximize your workouts and track your progress.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="mainBtn">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <img src="./images/why3.jpg" class="card-img-top" alt="Trainer watching women work out with ropes">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Community & Support</h5>
+              <p class="card-text">At Forge Fit, you’re not just a member—you’re part of a community. Our team and fellow members are here to support and motivate you, creating an atmosphere where everyone can thrive.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="mainBtn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- why us END -->
+
+  <!-- programs START -->
+  <section class="programs">
+    <div class="container" data-aos="fade-up">
+      <h3>Our group programs</h3>
+      <p>At Forge Fit, we believe that fitness is more fun—and more effective—when you're part of a community. That’s why our group programs are designed to bring people together in a motivating, high-energy environment where everyone works towards their personal best.</p>
+    </div>
+    
+    <div class="row g-0" data-aos="fade-up">
+      <div class="col-md-6 col-lg-4 g-0">
+        <div class="grid-item">
+          <img src="./images/program1.jpg" alt="Man climbing a rope">
+          <h4>Bootcamp</h4>
+          <div class="overlay">
+            <h5>Bootcamp</h5>
+            <p>A high-energy class that combines cardio, strength, and interval training, often with a military-inspired format, for a full-body workout.</p>
+            <a href="#" class="mainBtn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 g-0">
+        <div class="grid-item">
+          <img src="./images/program2.jpg" alt="Man and woman working out with a block">
+          <h4>CrossFit</h4>
+          <div class="overlay">
+            <h5>CrossFit</h5>
+            <p>A high-intensity workout combining elements of weightlifting, gymnastics, and cardio, designed to improve overall fitness and strength.</p>
+            <a href="#" class="mainBtn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 g-0">
+        <div class="grid-item">
+          <img src="./images/program3.jpg" alt="Woman practicing kickboxing">
+          <h4>Kickboxing</h4>
+          <div class="overlay">
+            <h5>Kickboxing</h5>
+            <p>A high-energy workout that combines martial arts techniques with cardio, helping to build strength, coordination, and stamina.</p>
+            <a href="#" class="mainBtn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 g-0">
+        <div class="grid-item">
+          <img src="./images/program4.jpg" alt="Class practicing yoga">
+          <h4>Yoga</h4>
+          <div class="overlay">
+            <h5>Yoga</h5>
+            <p>A mind-body class focusing on flexibility, strength, and relaxation through a series of poses, breathing exercises, and meditation.</p>
+            <a href="#" class="mainBtn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 g-0">
+        <div class="grid-item">
+          <img src="./images/program5.jpg" alt="Class practicing pilates">
+          <h4>Pilates</h4>
+          <div class="overlay">
+            <h5>Pilates</h5>
+            <p>A low-impact class emphasizing core strength, flexibility, and body awareness through controlled movements and exercises.</p>
+            <a href="#" class="mainBtn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 g-0">
+        <div class="grid-item">
+          <img src="./images/program66.jpg" alt="Woman preparing for zumba class">
+          <h4>Zumba</h4>
+          <div class="overlay">
+            <h5>Zumba</h5>
+            <p>A dance-based fitness class set to Latin and international music, designed to improve cardiovascular health and coordination while having fun.</p>
+            <a href="#" class="mainBtn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- programs END -->
+
+  <!-- review START -->
+  <section class="reviews">
+    <div id="carouselReview" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" data-aos="fade-up">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex align-items-center justify-content-center flex-column">
+              <i class="bi bi-quote"></i>
+              <p>Forge Fit is hands-down the best gym I’ve ever joined! The group classes are amazing—I’ve been doing Bootcamp and Yoga for a few months, and I’m already seeing results.</p>
+              <i class="bi bi-quote"></i>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex align-items-center justify-content-center flex-column container">
+              <i class="bi bi-quote"></i>
+              <p>I’m a huge fan of the Yoga and Pilates programs at Forge Fit. The instructors make sure everyone feels included, no matter their experience level.</p>
+              <i class="bi bi-quote"></i>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex align-items-center justify-content-center flex-column container">
+              <i class="bi bi-quote"></i>
+              <p>The gym is super clean, and they have everything you need, from mats to weights. The space is great and never too crowded, which I love.</p>
+              <i class="bi bi-quote"></i>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex align-items-center justify-content-center flex-column container">
+              <i class="bi bi-quote"></i>
+              <p>I’ve improved my flexibility and strength in just a few months, and I always leave the classes feeling refreshed and calm.</p>
+              <i class="bi bi-quote"></i>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex align-items-center justify-content-center flex-column container">
+              <i class="bi bi-quote"></i>
+              <p>The trainers are super motivating and make every workout challenging but fun.</p>
+              <i class="bi bi-quote"></i>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselReview" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselReview" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+  <!-- reviews END -->
+
+  <!-- questions START -->
+  <section class="questions">
+    <div class="container" data-aos="fade-up">
+      <h3>F&Q</h3>
+      <div class="accordionWrap">
+        <div class="accordion" id="accordionQuestions">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                1. What payment options are available for memberships?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionQuestions">
+              <div class="accordion-body">
+                We accept various payment methods for membership fees, including credit and debit cards, bank transfers, and even PayPal. You can set up a monthly subscription or opt for an annual payment plan, which offers a discount for committing long-term.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2. Is there a cancellation policy for memberships?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionQuestions">
+              <div class="accordion-body">
+                Yes, we have a flexible cancellation policy. You can cancel your membership at any time with a 30-day notice. For annual memberships, we encourage you to review our terms and conditions, as there may be specific details regarding refunds.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3. Can I freeze my membership?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionQuestions">
+              <div class="accordion-body">
+                Absolutely! If you need to take a break due to travel, medical reasons, or any other circumstance, you can freeze your membership for up to three months. Just let our front desk staff know, and they’ll assist you in the process.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  4. Do you offer any family or group membership discounts?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  Yes, we do! We have special pricing options for families and groups who want to join together. Please inquire at the front desk or check our website for more details about our family packages and how to enroll.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  5. Is there a trial period for new members?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  Yes! We offer a 7-day free trial for new members. You can explore our facilities, join any group classes, and get a feel for our community before committing to a membership. Sign up for your trial on our website today!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  6. What should I wear to class?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  Comfortable, athletic wear is ideal for all classes. For yoga and Pilates, stretchy clothing that allows for a full range of motion is recommended. Don’t forget to wear supportive athletic shoes for classes like Bootcamp, CrossFit, and Kickboxing, while bare feet or grip socks are acceptable for Yoga and Pilates.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  7. How many classes can I attend per week?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  With our standard membership, you can attend an unlimited number of group classes per week! This allows you to mix and match different programs to keep your workouts varied and exciting. However, some specialized classes may have limited spots, so it’s a good idea to reserve your spot in advance.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  8. What happens if I miss a class?
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  If you miss a class, don’t worry! Our classes are designed to be welcoming, and you can always join the next available session. You can also reach out to the instructor if you’d like to get a quick recap or modifications for what you missed.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- questions END -->
+
+<!-- footer START -->
+<footer>
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footerCol">
+          <h3>Follow us</h3>
+          <p>Follow Forge Fit on social media for the latest updates, fitness tips, special offers, and a peek into our vibrant community. Join us and be part of the journey toward a healthier, stronger you!</p>
+          <div class="footerSocial">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="footerCol">
+          <h3>Working hours</h3>
+          <div>
+            <i class="bi bi-clock"></i>
+            <span>Monday - Sunday:</span>
+            <div>06:00 - 23:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="footerCol">
+          <h3>Contact info</h3>
+          <a href="https://www.google.com/maps/place/Spomenik+Dra%C5%BEenu+Petrovi%C4%87u/@45.8030233,15.9612159,17z/data=!3m1!4b1!4m6!3m5!1s0x4765d795d03dab3b:0x3ae599c929e5e77f!8m2!3d45.8030233!4d15.9637962!16s%2Fg%2F11gnc_618t?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <i class="bi bi-geo-alt"></i>
+            <span>Trešnjevka 10110, Zagreb, Croatia</span>
+          </a>
+          <a href="mailto:info@forgefit.com">
+            <i class="bi bi-envelope"></i>
+            <span>info@forgefit.com</span>
+          </a>
+          <a href="tel:123456789">
+            <i class="bi bi-telephone"></i>
+            <span>+123 456 789</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="logoFooter">
+      <a href="#home">
+        <img src="./images/gym-logo-name.svg" alt="Forge Fit logo">
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <nav class="footerNav">
+          <h3>Policies</h3>
+          <ul>
+            <li>
+              <a href="#">Cookie Policy</a>
+            </li>
+            <li>
+              <a href="#">Personal data protection</a>
+            </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-6">
+        <nav class="footerNav">
+          <h3>About us</h3>
+          <ul>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Career</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <small>Copyright © 2024. Forge Fit.</small>
+    </div>
+  </div>
+</footer>
+<!-- footer END -->
+
+<!-- modal START -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-1">Contact Us</h2>
+        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" id="modalForm" name="modalForm" method="post">
+          <div class="row g-2">
+            <div class="col-md-6">
+                <label for="contactName" class="col-form-label">First name</label>
+                <input type="text" class="form-control" id="contactName" name="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="contactSurname" class="col-form-label">Last name</label>
+                <input type="text" class="form-control" id="contactSurname" name="surname" required>
+            </div>
+            <div class="col-md-12">
+                <label for="contactMail" class="col-form-label">Email address</label>
+                <input type="email" class="form-control" id="contactMail" name="email" required>
+            </div>
+          </div>
+
+          <div class="mt-2 mb-3">
+            <label for="contactText" class="col-form-label">Your message</label>
+            <textarea class="form-control" id="contactText" name="contactText" rows="5"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-check modalCheckbox mb-3">
+                <input class="form-check-input" type="checkbox" id="gdprModal" name="terms" required>
+                <label class="form-check-label" for="gdprModal">
+                    I have read and agree to <a href="#" target="_blank">Privacy policy</a> and <a href="#" target="_blank">Terms of Use</a>.
+                </label>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <button type="submit" class="mainBtn" id="sendFormBtn">Send message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal END -->
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
